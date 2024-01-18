@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+{% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+  <br><a href="/login//dailylogin">
+      일별 로그인
+  </a><br>
+  <br>
+  <a href="/login/userlogin">
+    사람별 로그인
+  </a>
+  <br>
+
+</body>
+</html>

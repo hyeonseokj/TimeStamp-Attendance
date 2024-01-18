@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<p>Name: {{ name }}</p>
+    <p>Login Time: {{ login_time }}</p>
+    <p>
+    <input type="button" value="LOGOUT" onclick="location.href='/logout'">
+    </p>
+
+    <hr>
+
+    <h3>Previous Login Times:</h3>
+    <ul>
+      {% for time in login_times %}
+        <li>{{ time }}</li>
+      {% endfor %}
+    </ul>
+
+</body>
+</html>
+

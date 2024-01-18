@@ -1,0 +1,8 @@
+<p>일별 로그인 기록</p>
+
+    <h3>Previous Login Times:</h3>
+    <ul>
+      {% for user in daily_user %}
+        <li>{{ user }}</li>
+      {% endfor %}
+    </ul>

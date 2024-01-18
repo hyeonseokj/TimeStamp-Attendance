@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+    <h1>LOGIN</h1>
+    <hr>
+    <div class="email">
+    <form method="post">
+        <p>
+            <b><label for="email">Login</label></b>
+        </p>
+        <p>
+            <input type="text" name="email"
+                placeholder="email"></input>
+        </p>
+        <p>
+            <input type="text" name="password"
+                placeholder="password"></input>
+        </p>
+        <button type="submit">Submit</button>
+    </from>
+        
+    
+    
+    <div>
+        <a href="signup">
+            SIGN UP
+        </a>
+
+        <a href="/">
+            HOME
+        </a>
+        
+    </div>
+    
+    </div>
+</body>
+</html>
